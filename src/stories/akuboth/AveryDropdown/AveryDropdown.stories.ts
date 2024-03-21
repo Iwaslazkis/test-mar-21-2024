@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
+import { userEvent, waitFor, fireEvent, within } from '@storybook/test';
 import AveryDropdown from './AveryDropdown.tsx';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Coding12/AveryDropdown',
+  title: 'Best_Components/AveryDropdown',
   component: AveryDropdown,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
@@ -35,6 +35,12 @@ export const Dark_Theme: Story = {
     color: '#333333',
     backgroundColor: '#8553f8'
   },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    // await userEvent.click(canvas.getByTestId('AveryTestID'));
+    await fireEvent.change(canvas.getByTestId('AveryTestID'), { target: { value: 'example2_value' } })
+  }
 };
 export const Light_Theme: Story = {
   args: {

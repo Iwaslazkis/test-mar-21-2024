@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+import { userEvent, within } from '@storybook/test';
+
 import Dropdown from './Dropdown.tsx';
 
 const meta: Meta<typeof Dropdown> = {
@@ -31,6 +33,11 @@ export const Default: StoryObj<typeof Dropdown> = {
   args: {
     disabled: false,
   },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByTestId('TlaDropdown'));
+  }
 };
 
 export const disabled: StoryObj<typeof Dropdown> = {

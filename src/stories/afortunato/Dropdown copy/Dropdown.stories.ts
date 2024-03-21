@@ -3,7 +3,7 @@ import { DropdownProps } from './Dropdown.types';
 import Dropdown from './Dropdown';
 
 export default {
-  title: 'Best_Components/FranzDropdown',
+  title: 'Best_Components/PierceDropdown',
   component: Dropdown,
   tags:['autodocs'],
   argTypes: {
