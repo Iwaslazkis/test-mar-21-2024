@@ -5,7 +5,7 @@ import './App.css'
 import './stories/diwasaki/diwasaki'
 import DiwasakiContainer from './stories/diwasaki/diwasaki'
 
-import AkubothContainer from './stories/akuboth/akuboth'
+// import AkubothContainer from './stories/akuboth/akuboth'
 import NabreraContainer from './stories/nabrera/nabrera'
 import DzhuContainer from './stories/dzhu/dzhu'
 import HargunsinghContainer from './stories/hargunsingh/hargunsingh'
@@ -15,10 +15,10 @@ import PrabhdeepkaurContainer from './stories/prabhdeepkaur/prabhdeepkaur'
 import RmalhiContainer from './stories/rmalhi/rmalhi'
 import SarefinContainer from './stories/sarefin/sarefin'
 import YangliuContainer from './stories/yangliu/yangliu'
-import TlaContainer from './stories/tla/tla'
+// import TlaContainer from './stories/tla/tla'
 import YingqiuliContainer from './stories/yingqiuli/yingqiuli'
-import AfortunatoContainer from './stories/afortunato/afortunato'
-import BanganContainer from './stories/bangan/bangan'
+// import AfortunatoContainer from './stories/afortunato/afortunato'
+// import BanganContainer from './stories/bangan/bangan'
 import KmoralesContainer from './stories/kmorales/kmorales'
 import DsharmaContainer from './stories/dsharma/dsharma'
 import DennisgContainer from './stories/dennisg/dennisg'
@@ -44,7 +44,8 @@ function App() {
             count is {count}
           </button>
           <DiwasakiContainer />
-          <AkubothContainer />
+          <YangliuContainer />
+          {/* <AkubothContainer /> */}
           <NabreraContainer />
           <DzhuContainer />
           <OazmiContainer />
@@ -53,11 +54,11 @@ function App() {
           <PrabhdeepkaurContainer />
           <RmalhiContainer />
           <SarefinContainer />
-          <TlaContainer />
+          {/* <TlaContainer /> */}
           {/* <YangliuContainer /> */}
           <YingqiuliContainer />
-          <AfortunatoContainer />
-          <BanganContainer />
+          {/* <AfortunatoContainer /> */}
+          {/* <BanganContainer /> */}
           <KmoralesContainer />
           <DsharmaContainer />
           <DennisgContainer />
